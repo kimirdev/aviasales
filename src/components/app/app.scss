@@ -1,0 +1,52 @@
+$bgcolor: #F3F7FA;
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+  background-color: $bgcolor;
+  font-family: 'Open sans';
+}
+
+.layout {
+  background-color: $bgcolor;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.header {
+  background-color: $bgcolor;
+
+  height: 160px;
+  .logo {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.content {
+  width: 754px;
+  // height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $bgcolor;
+
+  .tickets {
+    width: 502px;
+    margin: 0;
+  }
+}
+
